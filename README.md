@@ -15,6 +15,7 @@ conda env create -f environment.yaml
 ### Method
 Our algorithm for detecting triggers in images is provided in `TriDet/image_detector.py`. Our algorithm for detecting triggers in texts is provided in `TriDet/text_detector.py`. 
 
+
 ### Run Experiments
 You can run image experiments by 
 ```
@@ -27,3 +28,7 @@ You can run text experiments by
 python run_text.py --record_dir record/BTD-SST-2/BadNets_0/
 ```
 where `record_dir` is path of the test set.
+
+
+### Attacks
+We implement image backdoor attacks by [BackdoorBench](https://github.com/SCLBD/BackdoorBench) and text backdoor atatcks by [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). We include the attack code in `attack/` and `openbackdoor/attackers/`. However, all attack results are saved in our benchmark and these code is not used in BTD experiments. So you shouldn't worry about their requirements.
