@@ -2,7 +2,7 @@
 Benchmark and code for Backdoor Trigger Detection (BTD)
 
 ### Dataset
-Please download our benchmar in our [Anonymous Github](https://anonymous.4open.science/r/Backdoor-Trigger-Detection-52F0). Please put the unzipped files in `record/`.
+Please download our dataset by [Huggingface](xxxxx). Please put the unzipped files in `record/`.
 
 
 ### Environment
