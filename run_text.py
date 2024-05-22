@@ -21,9 +21,9 @@ from utils.bd_dataloader import TextDataset
 from TrigDet.text_detector import TextTrigDet
 
 
-os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+# os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 parser = argparse.ArgumentParser(description='Backdoor attack experiment')
-parser.add_argument('--record_dir', type=str, default="../../dxs/BTD/BTD_text/record/mix-badnets-0.1/agnews_0",
+parser.add_argument('--record_dir', type=str, default="record/BTD-SST-2/BadNets_0/",
                     help='Directory of saved results')
 parser.add_argument('--device', type=str, default='cuda', help='Device for neural network forwarding')
 parser.add_argument('--m', type=int, default=4,
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     # load attacked model
     config = set_config(config)
-    config['victim']['path'] = "../../dxs/BTD/BTD_text/record/bert-base-uncased"
+    # config['victim']['path'] = "record/bert-base-uncased"
     victim = load_victim(config["victim"])
     state_dict = torch.load(checkpoint_path)
     victim.load_state_dict(state_dict)

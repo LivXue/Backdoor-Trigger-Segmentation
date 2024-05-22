@@ -17,9 +17,9 @@ from utils.aggregate_block.model_trainer_generate import generate_cls_model
 from utils.bd_dataloader import ImageDataset
 from TrigDet.image_detector import ImageTrigDet
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '6'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '6'
 parser = argparse.ArgumentParser(description='Backdoor attack experiment')
-parser.add_argument('--record_dir', type=str, default='record/BTD-CIFAR-10/badnet_0/',
+parser.add_argument('--record_dir', type=str, default='record/BTD-CIFAR-10/BadNets_0/',
                     help='Directory of saved results')
 parser.add_argument('--device', type=str, default='cuda', help='Device for neural network forwarding')
 parser.add_argument('--th', type=float, default=0.5,
