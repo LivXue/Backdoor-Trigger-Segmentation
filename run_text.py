@@ -50,7 +50,7 @@ if __name__ == '__main__':
     device = args.device
     save_data_path = args.record_dir
     config_path = os.path.join(save_data_path, 'config.json')
-    checkpoint_path = os.path.join(save_data_path, "best.ckpt")
+    checkpoint_path = os.path.join(save_data_path, "attack_result.pt")
     with open(config_path, 'r') as f:
         config = json.load(f)
 
@@ -72,7 +72,7 @@ if __name__ == '__main__':
                              str(config["attacker"]["poisoner"]["target_label"]),
                              config["attacker"]["poisoner"]["name"])
     attack_name = config["attacker"]["poisoner"]["name"]
-    if attack_name == "badnets":
+    if attack_name == "BadNets":
         length = 16
     else:
         length = 32
@@ -86,9 +86,7 @@ if __name__ == '__main__':
     clean_texts = torch.load(os.path.join(save_data_path, 'clean_data.pt'))
     spt_text_set = clean_texts[:10]
     spt_text_inputs_set = [tokenizer(text, padding=True, truncation=True, max_length=length, return_tensors="pt") for
-                           text
-                           in
-                           clean_texts[:10]]
+                           text in clean_texts[:10]]
     detector = TextTrigDet(spt_text_inputs_set, tgt_cls=target_label, m=args.m, rm_threshold=args.rm_threshold,
                            paste_threshold=args.paste_threshold)
 
