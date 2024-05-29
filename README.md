@@ -1,4 +1,4 @@
-# Backdoor-Trigger-Detection
+# Backdoor Trigger Detection
 Benchmark and code for Backdoor Trigger Detection (BTD)
 
 ### Dataset
@@ -31,4 +31,4 @@ where `record_dir` is path of the test set.
 
 
 ### Attacks
-We implement image backdoor attacks by [BackdoorBench](https://github.com/SCLBD/BackdoorBench) and text backdoor atatcks by [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). We include the attack code in `attack/` and `openbackdoor/attackers/`. However, all attack results are saved in our benchmark and these code is not used in BTD experiments. So you shouldn't worry about their requirements.
+We implement image backdoor attacks by [BackdoorBench](https://github.com/SCLBD/BackdoorBench) and text backdoor atatcks by [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). We include the attack code in `attack/` and `openbackdoor/attackers/`. However, all attack results are saved in our benchmark and these code is not used in BTD experiments. So you don't need to worry about their requirements.
