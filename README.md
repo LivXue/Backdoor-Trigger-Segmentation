@@ -2,7 +2,7 @@
 Benchmark and code for Backdoor Trigger Detection (BTD)
 
 ### Dataset
-Please download our dataset from [Badidu Netdisk](https://pan.baidu.com/s/1TF2EU12pxjt1-KBBYtReUQ?pwd=v1xu) (password: v1xu) or [Google Drive](xxx) (Uploading). Please put the unzipped files in `record/`.
+Please download our dataset from [Google Drive](https://drive.google.com/drive/folders/1u09aO7S81Us50_U_RAyKMTCe5LuIA5Ut?usp=sharing) or [Badidu Netdisk](https://pan.baidu.com/s/1TF2EU12pxjt1-KBBYtReUQ?pwd=v1xu) (password: v1xu). Please put the unzipped files in `record/`.
 
 
 ### Environment
