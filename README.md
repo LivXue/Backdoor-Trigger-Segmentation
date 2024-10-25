@@ -1,5 +1,5 @@
-# Backdoor Trigger Detection
-Benchmark and code for Backdoor Trigger Detection (BTD)
+# Backdoor Trigger Segmentation
+Benchmark and code for Backdoor Trigger Segmentation (BTS)
 
 ### Benchmark
 Please download our benchmark (83GB) from [Google Drive](https://drive.google.com/drive/folders/1u09aO7S81Us50_U_RAyKMTCe5LuIA5Ut?usp=sharing) or [Badidu Netdisk](https://pan.baidu.com/s/1TF2EU12pxjt1-KBBYtReUQ?pwd=v1xu) (password: v1xu). Please put the unzipped files in `record/`.
@@ -13,7 +13,7 @@ conda env create -f environment.yaml
 
 
 ### Method
-Our algorithm for detecting triggers in images is provided in `TriDet/image_detector.py`. Our algorithm for detecting triggers in texts is provided in `TriDet/text_detector.py`. 
+Our algorithm for segmenting triggers in images is provided in `TriLoc/image_locator.py`. Our algorithm for segmenting triggers in texts is provided in `TriLoc/text_locator.py`. 
 
 
 ### Run Experiments

@@ -18,7 +18,7 @@ from openbackdoor.victims import load_victim
 from openbackdoor.utils.process_config import set_config
 from utils.metric import calculate_iou, calculate_recall, calculate_precision
 from utils.bd_dataloader import TextDataset
-from TrigDet.text_detector import TextTrigDet
+from TriLoC.text_locator import TextTrigDet
 
 
 # os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'

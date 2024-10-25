@@ -15,7 +15,7 @@ from utils.save_load_attack import load_attack_result
 from utils.metric import calculate_precision, calculate_recall, calculate_iou
 from utils.aggregate_block.model_trainer_generate import generate_cls_model
 from utils.bd_dataloader import ImageDataset
-from TrigDet.image_detector import ImageTrigDet
+from TriLoC.image_locator import ImageTrigDet
 
 # os.environ['CUDA_VISIBLE_DEVICES'] = '6'
 parser = argparse.ArgumentParser(description='Backdoor attack experiment')
